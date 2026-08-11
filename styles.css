@@ -112,17 +112,30 @@ h1 {
   line-height: 0.88;
 }
 
-p {
+.tagline {
   color: var(--muted);
   font-size: clamp(0.82rem, 1.5vw, 0.98rem);
   font-weight: 500;
   letter-spacing: 0.14em;
   line-height: 1.5;
+  padding-top: 0.5rem;
   text-transform: uppercase;
 }
 
-.tagline {
-  padding-top: 0.5rem;
+.site-footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.5rem clamp(1.5rem, 5vw, 4rem);
+  text-align: center;
+}
+
+.site-footer p {
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.035em;
+  line-height: 1.5;
 }
 
 @keyframes signal-breathe {
