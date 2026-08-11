@@ -127,8 +127,31 @@ h1 {
   right: 0;
   bottom: 0;
   left: 0;
+  display: grid;
+  justify-items: center;
+  gap: 0.7rem;
   padding: 1.5rem clamp(1.5rem, 5vw, 4rem);
   text-align: center;
+}
+
+.footer-nav a {
+  color: var(--ink);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 160ms ease;
+}
+
+.footer-nav a:hover {
+  color: var(--amber);
+}
+
+.footer-nav a:focus-visible {
+  border-radius: 0.2rem;
+  outline: 2px solid var(--amber);
+  outline-offset: 0.3rem;
 }
 
 .site-footer p {
@@ -136,6 +159,31 @@ h1 {
   font-size: 0.72rem;
   letter-spacing: 0.035em;
   line-height: 1.5;
+}
+
+.about {
+  display: grid;
+  min-height: 100vh;
+  min-height: 100svh;
+  place-content: center;
+  padding: clamp(2rem, 6vw, 5rem) clamp(2rem, 8vw, 8rem) 8rem;
+  text-align: center;
+}
+
+.about__copy {
+  display: grid;
+  max-width: 44rem;
+  gap: 1.75rem;
+}
+
+.about h1 {
+  font-size: clamp(3.5rem, 10vw, 7rem);
+}
+
+.about__copy p {
+  color: var(--muted);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.7;
 }
 
 @keyframes signal-breathe {
@@ -170,5 +218,9 @@ h1 {
 @media (prefers-reduced-motion: reduce) {
   .signal__ring {
     animation: none;
+  }
+
+  .footer-nav a {
+    transition: none;
   }
 }
