@@ -186,6 +186,36 @@ h1 {
   line-height: 1.7;
 }
 
+.leadership {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.5rem, 5vw, 3rem);
+  margin-top: 1rem;
+}
+
+.leader {
+  padding-top: 1.4rem;
+  border-top: 1px solid rgba(29, 28, 25, 0.16);
+}
+
+.leader h2 {
+  margin: 0;
+  font-family: "Iowan Old Style", "Baskerville", "Times New Roman", serif;
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.leader p {
+  margin-top: 0.45rem;
+  color: var(--amber);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
 @keyframes signal-breathe {
   0%,
   100% {
@@ -212,6 +242,12 @@ h1 {
 
   h1 {
     font-size: clamp(3rem, 12vh, 5rem);
+  }
+}
+
+@media (max-width: 560px) {
+  .leadership {
+    grid-template-columns: 1fr;
   }
 }
 
