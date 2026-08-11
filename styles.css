@@ -121,6 +121,10 @@ p {
   text-transform: uppercase;
 }
 
+.tagline {
+  padding-top: 0.5rem;
+}
+
 @keyframes signal-breathe {
   0%,
   100% {
