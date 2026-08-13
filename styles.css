@@ -276,8 +276,8 @@ h2 em {
 .app-store-button {
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
-  min-width: 11.25rem;
+  justify-content: center;
+  min-width: 10.25rem;
   min-height: 3.45rem;
   padding: 0.55rem 1.15rem;
   border-radius: 0.7rem;
@@ -298,39 +298,6 @@ h2 em {
   font-size: 0.58rem;
   font-weight: 500;
   letter-spacing: 0.015em;
-}
-
-.apple-mark {
-  position: relative;
-  width: 1.4rem;
-  color: transparent;
-}
-
-.apple-mark::before,
-.apple-mark::after {
-  position: absolute;
-  content: "";
-  background: currentColor;
-}
-
-.apple-mark::before {
-  top: -0.57rem;
-  left: 0.16rem;
-  width: 1.05rem;
-  height: 1.25rem;
-  border-radius: 55% 45% 52% 48%;
-  background: var(--white);
-  transform: rotate(-8deg);
-}
-
-.apple-mark::after {
-  top: -0.88rem;
-  left: 0.74rem;
-  width: 0.42rem;
-  height: 0.28rem;
-  border-radius: 80% 10% 80% 10%;
-  background: var(--white);
-  transform: rotate(-28deg);
 }
 
 .text-link {
@@ -1123,11 +1090,6 @@ h2 em {
   margin-top: 2.2rem;
   color: var(--ink);
   background: var(--paper);
-}
-
-.app-store-button--light .apple-mark::before,
-.app-store-button--light .apple-mark::after {
-  background: var(--ink);
 }
 
 .site-footer {
