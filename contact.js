@@ -8,6 +8,5 @@
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
-    status.textContent = "Nothing was sent. This contact form is not connected yet.";
   });
 })();
